@@ -1,3 +1,5 @@
+
+
 #write a program that print prime number 
 #Methode1:Normal Approach
 num=int(input())
@@ -38,3 +40,4 @@ for k in range(1,10000+1):
     count=check_prime(num)
     if count==2:
         print(num)
+
