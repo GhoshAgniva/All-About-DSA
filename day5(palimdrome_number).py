@@ -30,3 +30,26 @@ for k in range(1,10000):
     if num==res:
         print(num)
 
+
+#Write a program that print a triangle made by palimdrome number till 121
+def reverse(num):
+    res = 0
+    while (num != 0):
+        rem = num % 10
+        res = (res * 10) + rem
+        num = num // 10
+    return res
+
+num=121
+rows=int(input("Enter The number of rows: "))
+k=1
+for i in range(1,rows+1):
+    for j in range(i):
+        while True:
+            if reverse(k)==k:
+                print(k,end=" ")
+                k=k+1
+                break
+            else:
+                k=k+1
+    print()

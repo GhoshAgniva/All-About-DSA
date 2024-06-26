@@ -41,3 +41,6 @@ for k in range(1,10000+1):
     if count==2:
         print(num)
 
+
+
+
