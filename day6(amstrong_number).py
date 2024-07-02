@@ -1,32 +1,53 @@
-# #Methode 1: Funtional approach(using string concatination)
-def check_amstrong(num):
-    sum=0
-    for i in num:
-        p=(int(i)**3)
-        sum=sum+p
-    return sum
-num=input("enter the number: ")
-result=check_amstrong(num)
-if int(num)==result:
 
+
+
+# #Methode 2: Functional approach (without using string)
+
+def count_digit(num):
+    count=0
+    while num!=0:
+        num=num//10
+        count=count+1
+    return count
+def amstrong(num):
+    digit=count_digit(num)
+    res=0
+    while num!=0:
+        rem=num%10
+        res=(rem**digit)+res
+        num=num//10
+    return res
+num=int(input("Enter Your number: "))
+res=amstrong(num)
+if num==res:
     print("it is a amstrong number")
 else:
     print("it is not a amstrong number")
 
 
-# #Methode 2: Functional approach (without using string)
-# def check_amstrong(num):
-#     count=0
-#     sum=0
-#     while(num!=0):
-#         num=num//10
-#         count+=1
-#         rem=num%10
-#         sum=rem**count+sum
-#         return sum   ###changes neded
-# num=1634
-# countt=check_amstrong(num)
-# print(countt)
+
+#printing all the amstrong number from 1 to 10000
+def count_digit(num):
+    count=0
+    while num!=0:
+        num=num//10
+        count=count+1
+    return count
+def amstrong(num):
+    digit=count_digit(num)
+    res=0
+    while num!=0:
+        rem=num%10
+        res=(rem**digit)+res
+        num=num//10
+    return res
+for k in range(1,10000+1):
+    num=k
+    res=amstrong(num)
+    if num==res:
+        print(num)
+
+
 
 
 #Anather methode
