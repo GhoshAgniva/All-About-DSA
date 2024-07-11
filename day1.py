@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #Taking user input as list format
 n=int(input("Enter the size of the list: "))
 l=[]
@@ -91,3 +92,15 @@ print(max2)
 
 
 
+=======
+#what is the output for this code
+def print_num(num):
+    if num==0:
+        print(num)
+        return
+    print_num(num-1)
+    print(num)
+num = 5
+res=print_num(num)
+print(res)
+>>>>>>> d066fa6c03f87287b195efd57b15aff2b94476c4
