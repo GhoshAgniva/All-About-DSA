@@ -9,6 +9,10 @@ def binary_search(list,key):
             low=mid+1
         else:
             high=mid-1
+<<<<<<< HEAD
+        print(mid)
+=======
+>>>>>>> d066fa6c03f87287b195efd57b15aff2b94476c4
     return -1
 n=int(input("Enter the size of the list: "))
 list=[]
